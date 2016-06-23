@@ -12,4 +12,14 @@
     "ar-drone": "^0.3.3",
     "express": "^4.14.0",
     "socket.io": "^1.4.6"
-  },  "repository": {  "type": "git", "url": "https://github.com/calef800/drone_browser.git"  }}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calef800/drone_browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/calef800/drone_browser/issues"
+  },
+  "homepage": "https://github.com/calef800/drone_browser#readme",
+  "devDependencies": {}
+}
