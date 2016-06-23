@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///C:/Drone/public/index.html -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  
+<title>
+    Index
+  </title>
+  
+<link href="./index_files/style.css" rel="stylesheet">
+  
+<link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+</head>
+  
+
+  
+<body>
+  
+<div class="btn-toolbar" id="controls">
+ 
+<div class="btn-group" data="flight">     
+<button class="btn" data="front">Front</button>
+      
+<button class="btn" data="back">Back</button>
+      
+<button class="btn" data="left">Left</button>
+      
+<button class="btn" data="right">Right</button>
+      
+<button class="btn" data="up">Up</button>
+      
+<button class="btn" data="down">Down</button>
+
+<button class="btn" data="clockwise">CW</button>
+<button class="btn" data="counterClockwise">CCW</button>
+</div>
+<div class="btn-group" data="drone">      
+<button class="btn btn-success" data="takeoff">takeoff</button>
+      
+<button class="btn btn-warning" data="land">land</button>
+      
+<button class="btn btn-danger" data="disableEmergency">recover</button>  
+</div>          
+  
+</div>
+  
+
+<img id="cam" src="./index_files/default.jpg">
+  
+  
+<div id="stats">     
+        
+<div>Battery: <span id="batteryPercentage">(Drone not connected)</span>%</div>
+        
+<div>Direction: <span id="clockwiseDegrees"></span>&#65533;</div>
+        
+<div>front/back: <span id="frontBackDegrees"></span>&#65533;</div>
+        
+<div>left/right: <span id="leftRightDegrees"></span>&#65533;</div>
+        
+<div>Altitude: <span id="altitudeMeters"></span>m</div>
+        
+<div>Velocity (x/y/z): <span id="xVelocity"></span> / <span id="yVelocity"></span> / <span id="zVelocity"></span></div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src = "client.js">
+  
+</script>
+
+
+</body>
+</html>
