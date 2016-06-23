@@ -1,32 +1,15 @@
 {
   "name": "drone_browser",
-  
-   "version": "1.0.0",
-  
-   "description": "Controls a Parrot ar.drone 2.0 using felixge ar-drone library in a web browser and streams the video from the camera",
-  
-   "main": "drone_browser.js",
-  
-   "scripts": {
-    
-	"test": "echo \"Error: no test specified\" && exit 1"
-  
-   },
-  
-   "author": "calef800",
-  
-   "license": "ISC",
-  
-   "dependencies": {
-    
-	"ar-drone": "^0.3.3",
-    
-	"express": "^4.14.0",
-    
-	"socket.io": "^1.4.6"
-  
-   }
-
-
-   "repository": {}
-}
+  "version": "1.0.0",
+  "description": "Controls a Parrot ar.drone 2.0 using felixge ar-drone library in a web browser and streams the video from the camera",
+  "main": "drone_browser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "calef800",
+  "license": "ISC",
+  "dependencies": {
+    "ar-drone": "^0.3.3",
+    "express": "^4.14.0",
+    "socket.io": "^1.4.6"
+  },  "repository": {  "type": "git", "url": "https://github.com/calef800/drone_browser.git"  }}
