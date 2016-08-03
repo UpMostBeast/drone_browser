@@ -10,6 +10,7 @@ document.getElementById('controls').onmousedown = function(e) {
 	if(target.nodeName=='BUTTON') {
 		instructions = {type: getData(target.parentNode), action: getData(target)}
 		socket.emit('move', instructions);
+		console.log(instructions);
 	}
 };
 document.getElementById('controls').onmouseup = function(e) {
@@ -17,7 +18,7 @@ document.getElementById('controls').onmouseup = function(e) {
 	while (target.nodeName == 'BUTTON') {
 		target = target.parentNode;
 	}
-	if (target.getAttribute('data') == 'flight'){
+	if (getData(target) == 'flight'){
 		socket.emit('stop');
 	}
 };

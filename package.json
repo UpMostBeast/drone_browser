@@ -2,7 +2,7 @@
   "name": "drone_browser",
   "version": "1.0.0",
   "description": "Controls a Parrot ar.drone 2.0 using felixge ar-drone library in a web browser and streams the video from the camera",
-  "main": "drone_browser.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,12 @@
   "dependencies": {
     "ar-drone": "^0.3.3",
     "express": "^4.14.0",
-    "socket.io": "^1.4.6"
+    "nyks": "^2.25.3",
+    "socket.io": "^1.4.6",
+    "stream-split": "^0.2.0",
+    "sylvester.js": "^0.1.1",
+    "uclass": "^2.1.0",
+    "ws": "^1.1.1"
   },
   "repository": {
     "type": "git",

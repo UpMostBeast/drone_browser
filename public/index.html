@@ -48,9 +48,12 @@
 </div>
   
 
-<img id="cam" src="./index_files/default.jpg">
-  
-  
+<div id = "cam"></div>
+<div class="btn-group">
+<button class="btn" onclick="wsavc.playStream()">Start Video</button>
+<button class="btn" onclick="wsavc.stopStream()">Stop Video</button>
+<button class="btn" onclick="wsavc.disconnect()">Disconnect</button>
+</div>
 <div id="stats">     
         
 <div>Battery: <span id="batteryPercentage">(Drone not connected)</span>%</div>
@@ -68,9 +71,9 @@
 </div>
 
 <script src="/socket.io/socket.io.js"></script>
-
-<script src = "client.js">
-  
+<script src = "./index_files/bundle.js">
+</script>
+<script src = "./index_files/client.js">
 </script>
 
 
